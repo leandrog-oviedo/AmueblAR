@@ -23,7 +23,7 @@
 
 /* Coloco un color de fondo a todo el cuerpo */
 body {
-    background-color: #CCC5C9;
+    background-image: linear-gradient(to top right, rgba(80, 77, 79, 0), rgba(80, 77, 79, 1));
 }
 
 /* Hago la grilla para el header */
@@ -129,11 +129,18 @@ section article p {
     display: flex;
     flex-direction: row;
     justify-content: center;
+
 }
+
 
 .imgHolder {
     max-width: 80vw;
     padding: 5%;
+    transition: transform 2s;
+}
+
+.imgHolder:hover {
+    transform: scaleX(-1);
 }
 
 /* Aqui voy a hacer una sub-grilla para los producto unicamente */
@@ -322,6 +329,7 @@ button:hover {
         width: 60vw;
         margin-left: 10vw;
     }
+
     .wp {
         margin: 5%;
         grid-column: 1/5;
@@ -343,6 +351,7 @@ button:hover {
     }
 
 }
+
 /* Desde aqui la media querie para pantallas de mas de 1200px */
 @media screen and (min-width:1200px) {
     .isotype {
