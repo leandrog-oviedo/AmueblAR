@@ -183,10 +183,28 @@ section article p {
     grid-column: 1/3;
     grid-row: 1/2;
 }
-
+/* Hago una animacion donde voy a cambiar el color y tamaño del texto, que va a tener una duracion de 10 segundos, va a esperar dos segundos luego que la pagina carga para iniciar, y va a estar en un loop infinito*/
 .wpText {
     font-family: rubik-ita;
     color: #403D39;
+    animation-name: wptextcolor;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes wptextcolor {
+    0%{color:#403D39; font-size:1rem}
+    10%{color:#EB5E28; font-size:1.1rem}
+    20%{color:#EB5E28; font-size:1.2rem}
+    30%{color:#EB5E28; font-size:1.3rem}
+    40%{color:#C95222; font-size:1.4rem}
+    50%{color:#C95222; font-size:1.5rem}
+    60%{color:#C95222; font-size:1.4rem}
+    70%{color:#EB5E28; font-size:1.3rem}
+    80%{color:#EB5E28; font-size:1.2rem}
+    90%{color:#EB5E28; font-size:1.1rem}
+    100%{color:#403D39; font-size:1rem}
 }
 
 .isoWp {
