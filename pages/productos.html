@@ -10,7 +10,8 @@
     <meta name="author" content="Leandro Oviedo">
     <link rel="shortcut icon" href="../assets/favicon.ico">
     <title>Productos</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="./css/styleboot.css">
 
 </head>
 
@@ -34,61 +35,61 @@
         </nav>
 
     </header>
-    <!--Tengo que averiguar como hacer un slider de imagenes!!!-->
     <!--Aqui comienza el listado con los diferentes productos, se usa un h2 para el nomre de cada producto, una etiqueta div para contener la imagen y que sea mas facil de manejar, y un parrafo con la descripccion para cada producto-->
     <main>
-        <section class="cardProducts">
-            <article class="card">
-                <h2 class="cardTitle">Credenza</h2>
-                <div class="cardImg">
-                    <img class="imgProd" src="../assets/credenza.png" alt="Imagen credenza">
-                </div>
-                <p class="cardP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ratione tenetur. Commodi
-                    ipsum possimus, earum sit ab, nisi accusantium repellendus nihil obcaecati, itaque necessitatibus ea
-                    cupiditate in? Consequuntur aspernatur corporis est possimus asperiores eum porro cupiditate
-                    accusantium sapiente autem? Suscipit!</p>
-                </article>
-            <article class="card">
-                <h2 class="cardTitle"> Mesa ratona </h2>
-                <div class="cardImg">
-                    <img class="imgProd" src="../assets/coffe-table.png" alt="Imagen mesa ratona">
-                </div>
-                <p class="cardP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ratione tenetur. Commodi
-                    ipsum possimus, earum sit ab, nisi accusantium repellendus nihil obcaecati, itaque necessitatibus ea
-                    cupiditate in? Consequuntur aspernatur corporis est possimus asperiores eum porro cupiditate
-                    accusantium sapiente autem? Suscipit!</p>
-            </article>
-            <article class="card">
-                <h2 class="cardTitle"> Escritorio </h2>
-                <div class="cardImg">
-                    <img class="imgProd" src="../assets/desk.png" alt="Imagen escritorio">
-                </div>
-                <p class="cardP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ratione tenetur. Commodi
-                    ipsum possimus, earum sit ab, nisi accusantium repellendus nihil obcaecati, itaque necessitatibus ea
-                    cupiditate in? Consequuntur aspernatur corporis est possimus asperiores eum porro cupiditate
-                    accusantium sapiente autem? Suscipit!</p>
-            </article>
-            <article class="card">
-                <h2 class="cardTitle"> Mesa de luz </h2>
-                <div class="cardImg">
-                    <img class="imgProd" src="../assets/nigth-stand.png" alt="Imagen mesa de luz">
-                </div>
-                <p class="cardP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ratione tenetur. Commodi
-                    ipsum possimus, earum sit ab, nisi accusantium repellendus nihil obcaecati, itaque necessitatibus ea
-                    cupiditate in? Consequuntur aspernatur corporis est possimus asperiores eum porro cupiditate
-                    accusantium sapiente autem? Suscipit!</p>
-            </article>
-            <article class="card">
-                <h2 class="cardTitle"> Rack para tv </h2>
-                <div class="cardImg">
-                    <img class="imgProd" src="../assets/tv-rack.png" alt="Imagen rack de tv">
-                </div>
-                <p class="cardP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ratione tenetur. Commodi
-                    ipsum possimus, earum sit ab, nisi accusantium repellendus nihil obcaecati, itaque necessitatibus ea
-                    cupiditate in? Consequuntur aspernatur corporis est possimus asperiores eum porro cupiditate
-                    accusantium sapiente autem? Suscipit!</p>
-            </article>
-        </section>
+        <section class="container">
+        <article class="card col-xs-12 col-md-6 col-lg-4 col-xl-3" style="width: 18rem;">
+            <img src="../assets/credenza.png" class="card-img-top" alt="Imagen credenza">
+            <div class="card-body">
+              <h5 class="card-title">Credenza</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ratione tenetur. Commodi
+                ipsum possimus, earum sit ab, nisi accusantium repellendus nihil obcaecati, itaque necessitatibus ea
+                cupiditate in? Consequuntur aspernatur corporis est possimus asperiores eum porro cupiditate
+                accusantium sapiente autem? Suscipit!</p>
+            </div>
+        </article>
+        <article class="card" style="width: 18rem;">
+            <img src="../assets/coffe-table.png" class="card-img-top" alt="Imagen mesa ratona">
+            <div class="card-body">
+              <h5 class="card-title">Mesa ratona</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ratione tenetur. Commodi
+                ipsum possimus, earum sit ab, nisi accusantium repellendus nihil obcaecati, itaque necessitatibus ea
+                cupiditate in? Consequuntur aspernatur corporis est possimus asperiores eum porro cupiditate
+                accusantium sapiente autem? Suscipit!</p>
+            </div>
+        </article>
+        <article class="card" style="width: 18rem;">
+            <img src="../assets/desk.png" class="card-img-top" alt="Imagen escritorio">
+            <div class="card-body">
+              <h5 class="card-title">Escritorio</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ratione tenetur. Commodi
+                ipsum possimus, earum sit ab, nisi accusantium repellendus nihil obcaecati, itaque necessitatibus ea
+                cupiditate in? Consequuntur aspernatur corporis est possimus asperiores eum porro cupiditate
+                accusantium sapiente autem? Suscipit!</p>
+            </div>
+        </article>
+        <article class="card" style="width: 18rem;">
+            <img src="../assets/nigth-stand.png" class="card-img-top" alt="Imagen mesa de luz">
+            <div class="card-body">
+              <h5 class="card-title">Mesa de luz</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ratione tenetur. Commodi
+                ipsum possimus, earum sit ab, nisi accusantium repellendus nihil obcaecati, itaque necessitatibus ea
+                cupiditate in? Consequuntur aspernatur corporis est possimus asperiores eum porro cupiditate
+                accusantium sapiente autem? Suscipit!</p>
+            </div>
+        </article>
+        <article class="card" style="width: 18rem;">
+            <img src="../assets/tv-rack.png" class="card-img-top" alt="Imagen rack de tv">
+            <div class="card-body">
+              <h5 class="card-title">Rack para tv</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ratione tenetur. Commodi
+                ipsum possimus, earum sit ab, nisi accusantium repellendus nihil obcaecati, itaque necessitatibus ea
+                cupiditate in? Consequuntur aspernatur corporis est possimus asperiores eum porro cupiditate
+                accusantium sapiente autem? Suscipit!</p>
+            </div>
+        </article>
+        
+        </sectionc>
         <a target="_blank" href="https://www.instagram.com"><img class="isoInsta" src="../assets/instagram.png" alt="Logo de instagram">
         </a>
     </main>
@@ -98,7 +99,7 @@
         <a target="_blank" href="../pages/contacto.html"> <img class="mail" src="../assets/correo.png" alt="Contacto"></a>
         <div class="copy">&#9400 Copyright 2022</div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
