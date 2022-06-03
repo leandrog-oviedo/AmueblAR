@@ -10,59 +10,110 @@
     <meta name="author" content="Leandro Oviedo">
     <link rel="shortcut icon" href="../assets/favicon.ico">
     <title>Contacto</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styleboot.css">
 </head>
 
 <body class="gridCont">
-    <!--Aqui comienza el header de la pagina que incluye logos y nombre de la empresa asi como tambien el logo de instagram con los vinculos correspondientes a cada pagina-->
-    <header class="headCont">
-        <spam class="isotype">A</spam>
-        <a class="isotype  text" href="../index.html">AmueblAR </a>
-        <!-- <a target="_blank" href="https://www.instagram.com"><img class="isoInsta" src="./assets/instagram.png" alt="Logo de instagram">
-        </a> -->
-
-        <!-- Aqui comienza la barra de navegacion son tres elementos con sus correspondientes links a cada seccion de la web -->
-        <nav class="navbar">
-            <ul>
-                <li><a href="#index.html">Inicio</a></li>
-                <li><a href="../pages/sobre-nosotros.html"> Sobre nosotros </a></li>
-                <li><a href="../pages/productos.html"> Productos </a></li>
-                <li><a href="../pages/info-clientes.html">Información para clientes </a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-
-    </header>
-    <main class="contactForm">
-        <!-- Aqui comienza el formulario de contacto -->
-        <div class="wp">
-            <h3 class="wpText">Comunicate con nosotros vía whatsapp</h3>
-            <a target="_blank" href="https://wa.me/+543515299720"><img class="isoWp" src="../assets/whatsapp.png"
-                    alt="Icono whatsapp"></a>
+    <!--Aqui comienza el header de la pagina que incluye nombre de la empresa con el vinculos al index-->
+    <header class="headCont container position-relative">
+        <div class="container text-center h1">
+            <a class="isotype text col-xs-8 col-md-6" href="../index.html">AmueblAR </a>
         </div>
-        <div class="mapCont">
-            <iframe class="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.2849730942294!2d-64.2682784482167!3d-31.433820746178938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8ec3a74c73c196a2!2zMzHCsDI2JzAxLjgiUyA2NMKwMTUnNTguNSJX!5e0!3m2!1ses!2sar!4v1651072279466!5m2!1ses!2sar"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <form action="" method="get" autocomplete="on">
-            <label for="name">Nombre</label>
-            <input type="text" name="name" id="name">
-            <label for="last">Apellido</label>
-            <input type="text" name="last" id="last">
-            <label for="tel">Telefono</label>
-            <input type="tel" name="tel" id="tel">
-            <label for="email">e-mail</label>
-            <input type="email" name="email" id="email">
-            <label for="message">Mensaje</label>
-            <textarea name="message" id="message" cols="30" rows="10"
-                placeholder="Estamos para ayudarte, por favor realiza tu consulta aquí y será respondida a la brevedad por uno de nuestros asesores."></textarea>
-            <div>
-                <button type="submit">Enviar</button>
+        <!-- Aqui comienza la barra de navegacion son cinco elementos con sus correspondientes links a cada seccion de la web -->
+        <nav class="container navbar sticky-top navbar-expand-md navbar-light bg-ligth justify-content-end">
+            <div class="text-start">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-end " id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../pages/sobre-nosotros.html">Sobre
+                                nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/info-clientes.html">Informacion para clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </form>
-        <a target="_blank" href="https://www.instagram.com"><img class="isoInsta" src="../assets/instagram.png" alt="Logo de instagram">
+        </nav>
+    </header>
+    <!-- Aqui comienza la pagina de contacto con tarjetas que contienen, enlace de whatsapp, iframe con el mapa y un formulario de contacto para dejar mensajes via web -->
+    <main class="container">
+        <section class="row g-4">
+            <article class="col-lg-6 col-xxl-4">
+                <div class="card text-center bacgroundColor text-dark h-100">
+                    <h5 class="card-header">Whatsapp</h5>
+                    <img src="../assets/whatsapp.png" class="card-img-center h-90" alt="Iso whatsapp">
+                    <div class="card-body">
+                        <a class="btn btn-primary" target="_blank" href="https://wa.me/+543515299720"
+                            role="button">Escribinos</a>
+                    </div>
+                </div>
+            </article>
+            <article class="col-lg-6 col-xxl-4">
+                <div class="card text-center bacgroundColor text-dark h-100">
+                    <h5 class="card-header">Encontranos aquí</h5>
+                    <div class="card-body">
+                        <iframe class="ratio ratio-1x1"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.2849730942294!2d-64.2682784482167!3d-31.433820746178938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8ec3a74c73c196a2!2zMzHCsDI2JzAxLjgiUyA2NMKwMTUnNTguNSJX!5e0!3m2!1ses!2sar!4v1651072279466!5m2!1ses!2sar"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+                </div>
+            </article>
+<!-- Aquí comienza el formulario de contacto via web -->
+            <article class="col-lg-6 col-xxl-4">
+                <div class="card text-center bacgroundColor text-dark h-100">
+                    <div class="card-body">
+                        <form action="" method="get" autocomplete="on">
+                            <div class="input-group mb-2">
+                                <input type="text" class="form-control" placeholder="Nombre" aria-label="name"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-2">
+                                <input type="text" class="form-control" placeholder="Apellido" aria-label="lastName"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-2">
+                                <input type="text" class="form-control" placeholder="Telefono" aria-label="tel"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-2">
+                                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-2">
+                                <input type="text" class="form-control" placeholder="email" aria-label="email"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                            <div class="form-group mb-2 text-start">
+                                <label class="form-label" for="message">Mensaje</label>
+                                <textarea class="form-control" name="message" id="message" rows="5"
+                                    placeholder="Estamos para ayudarte, por favor realiza tu consulta aquí y será respondida a la brevedad por uno de nuestros asesores."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+
+                    </div>
+                </div>
+        </section>
+        <a target="_blank" href="https://www.instagram.com"><img class="isoInsta" src="../assets/instagram.png"
+                alt="Logo de instagram">
         </a>
     </main>
     <footer class="footCont">

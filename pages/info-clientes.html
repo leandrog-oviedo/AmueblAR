@@ -10,77 +10,105 @@
     <meta name="author" content="Leandro Oviedo">
     <link rel="shortcut icon" href="../assets/favicon.ico">
     <title>Información</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styleboot.css">
 </head>
 
 <body class="gridCont">
-    <!--Aqui comienza el header de la pagina que incluye logos y nombre de la empresa asi como tambien el logo de instagram con los vinculos correspondientes a cada pagina-->
-    <header class="headCont">
-        <spam class="isotype">A</spam>
-        <a class="isotype  text" href="../index.html">AmueblAR </a>
-        <!-- <a target="_blank" href="https://www.instagram.com"><img class="isoInsta" src="./assets/instagram.png" alt="Logo de instagram">
-        </a> -->
+    <!--Aqui comienza el header de la pagina que incluye nombre de la empresa con el vinculos al index-->
+    <header class="headCont container position-relative">
+        <div class="container text-center h1">
+            <a class="isotype  text col-xs-8 col-md-6" href="../index.html">AmueblAR </a>
+        </div>
 
-        <!-- Aqui comienza la barra de navegacion son tres elementos con sus correspondientes links a cada seccion de la web -->
-        <nav class="navbar">
-            <ul >
-                <li><a href="#index.html">Inicio</a></li>
-                <li><a href="../pages/sobre-nosotros.html"> Sobre nosotros </a></li>
-                <li><a href="../pages/productos.html"> Productos </a></li>
-                <li><a href="../pages/info-clientes.html">Información para clientes </a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
+        <!-- Aqui comienza la barra de navegacion son cinco elementos con sus correspondientes links a cada seccion de la web -->
+        <nav class="container navbar sticky-top navbar-expand-md navbar-light bg-ligth justify-content-end">
+            <div class="text-start">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-end " id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../pages/sobre-nosotros.html">Sobre
+                                nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/info-clientes.html">Informacion para clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
     </header>
-    <main class="mainCont">
-        <section>
-            <article>
-                <h2>
-                    Cómo comprar
-                </h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, suscipit maiores sit sequi obcaecati
-                    nihil aliquam in! Et quisquam saepe quibusdam doloribus unde atque, eveniet laudantium enim sapiente
+    <!--Aqui comienza la seccion de informacion sobre la empresa, son tres articulos dentro de una seccion, en modo de tarjetas sin bordes-->
+    <main class="container">
+        <section class="row g-6">
+            <article class="col-md-6 col-xxl-4">
+                <h2 class="text-center colorTitle">Cómo comprar</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, suscipit maiores sit sequi
+                    obcaecati
+                    nihil aliquam in! Et quisquam saepe quibusdam doloribus unde atque, eveniet laudantium enim
+                    sapiente
                     placeat ducimus officiis sit? Quaerat eum deleniti vero harum aliquam autem laboriosam possimus.
-                    Veniam voluptate neque, debitis reiciendis ullam fugit omnis iure suscipit et corrupti, blanditiis
+                    Veniam voluptate neque, debitis reiciendis ullam fugit omnis iure suscipit et corrupti,
+                    blanditiis
                     provident quos nisi nam odio, totam aliquid hic! Facilis esse itaque aliquid placeat dignissimos
                     ratione accusantium accusamus, repellendus nobis porro atque ea rerum at dolor a iste excepturi,
                     similique soluta distinctio. Molestiae accusamus earum eius cupiditate temporibus tenetur iusto
-                    aspernatur nesciunt cumque? Ratione quas maxime provident!</p>
+                    aspernatur nesciunt cumque? Ratione quas maxime provident!
+                </p>
             </article>
-            <article>
-                <h2>Métodos de pago</h2>
+            <article class="col-md-6 col-xxl-4">
+                <h2 class="text-center colorTitle">Métodos de pago</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cupiditate rerum porro
                     voluptates deserunt iusto, ut dolor, quasi, sed harum nobis commodi assumenda! Ab, ipsam maxime
                     commodi, necessitatibus dignissimos earum expedita provident, accusamus tempora iusto ex dolorem
                     doloremque nostrum quia dolor odit rerum perspiciatis magnam fugiat temporibus architecto. Alias
-                    dolorum amet adipisci numquam minima blanditiis perferendis eum voluptatibus debitis et temporibus
-                    corrupti ratione facere ipsam dicta deserunt ipsum, dolorem quam cupiditate nam eligendi error vitae
+                    dolorum amet adipisci numquam minima blanditiis perferendis eum voluptatibus debitis et
+                    temporibus
+                    corrupti ratione facere ipsam dicta deserunt ipsum, dolorem quam cupiditate nam eligendi error
+                    vitae
                     esse neque. Tempora, veniam vitae.
                 </p>
             </article>
-            <article>
-                <h2>Medios de envío</h2>
+            <article class="col-md-6 col-xxl-4">
+                <h2 class="text-center colorTitle">Medios de envío</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt officiis ducimus, corrupti
                     sapiente nobis commodi neque eveniet architecto fugiat, voluptates unde repudiandae distinctio a
                     quidem culpa autem recusandae repellat vel. Sapiente rerum deserunt saepe, obcaecati in expedita
                     nobis at laborum minima, earum quae inventore non atque sed ducimus illum sunt odit, natus rem?
-                    Voluptatibus magnam nobis dolores minima vitae praesentium?</p>
+                    Voluptatibus magnam nobis dolores minima vitae praesentium?
+                </p>
             </article>
         </section>
-        <a target="_blank" href="https://www.instagram.com"><img class="isoInsta" src="../assets/instagram.png" alt="Logo de instagram">
-        </a>
+        <div>
+            <a target="_blank" href="https://www.instagram.com"><img class="isoInsta" src="../assets/instagram.png"
+                    alt="Logo de instagram">
+            </a>
+        </div>
     </main>
-
-    <!--
-        Tengo que averiguar como hacer un slider de imagenes!!!
-    -->
     <!--Aqui comienza el pie de pagina conteniendo el enlace a la seccion de contacto y el copyright de la web-->
     <footer class="footCont">
-        <a target="_blank" href="../pages/contacto.html"> <img class="mail" src="../assets/correo.png" alt="Contacto"></a>
+        <a target="_blank" href="../pages/contacto.html"> <img class="mail" src="../assets/correo.png"
+                alt="Contacto"></a>
         <div class="copy">&#9400 Copyright 2022</div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

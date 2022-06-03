@@ -12,14 +12,82 @@
     font-family: rubik-ita;
     src: url(../fonts/Rubik-Italic-VariableFont_wght.ttf);
 }
-.isotype{text-decoration: none;
+
+.isotype {
+    text-decoration: none;
     font-family: Bonheur;
     font-size: 10vw;
     color: #EB5E28;
-    }
-body{
-    background-color:#ccc5b9;
 }
-.bacgroundColor{
-    background-color:#EBE3D5;
+
+body {
+    background-color: #ccc5b9;
 }
+
+.bacgroundColor {
+    background-color: #EBE3D5;
+}
+.colorTitle{
+    color:#EB5E28
+}
+/* Doy formato al logo de instagram, y el siguiente bloque se encarga de la animacion */
+.isoInsta {
+    height: 2rem;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    transition: box-shadow 0.5s ease;
+    border-radius: 1rem;
+}
+
+.isoInsta:hover {
+    box-shadow: .5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+.isoWp {
+    transform: translateX(40vw);
+    transition: all 2s ease-in-out;
+}
+
+.isoWP:hover {
+    width: 5%;
+}
+
+.mapCont {
+    grid-column: 1/3;
+    grid-row: 2/3;
+
+}
+
+.map {
+    width: auto;
+    height: auto;
+    margin: 2%;
+    border-radius: 4%;
+
+}
+
+/* Desde aqui y los proximos tres bloques se encargan del footer, tanto del icono de correo, como la animacion y el formato del copy */
+.footCont {
+    grid-column: 1/5;
+    grid-row: 4/5;
+}
+
+.mail {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8%;
+    transition: box-shadow 0.5s ease;
+    border-radius: 0.8rem;
+}
+
+.mail:hover {
+    box-shadow: .5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.copy {
+    font-family: rubik-black;
+    font-size: 0.8rem;
+    color: #403D39;
+    text-align: left;
+    margin-top: 10px;
