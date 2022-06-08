@@ -73,7 +73,6 @@ body {
     padding: 1rem;
 }
 
-
 /* Desde aqui y los proximos tres bloques se encargan del footer, tanto del icono de correo, como la animacion y el formato del copy */
 .footCont {
     grid-column: 1/5;
