@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* Declaro los font face para las fuentes que voy a usar en el proyecto */
+@font-face {
+  font-family: Bonheur;
+  src: url(../fonts/BonheurRoyale-Regular.ttf); }
+
+@font-face {
+  font-family: rubik-black;
+  src: url(../fonts/Rubik-VariableFont_wght.ttf); }
+
+@font-face {
+  font-family: rubik-ita;
+  src: url(../fonts/Rubik-Italic-VariableFont_wght.ttf); }
+
+/* Selector universal para sacar margin y padding y hago que las dimensiones sean calculadas dentro del borde de mi caja */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #ccc5b9; }
+
+.isotype {
+  text-decoration: none;
+  font-family: Bonheur;
+  font-size: 10vw;
+  color: #EB5E28; }
+
+.isotype.text:hover {
+  color: #403D39; }
+
+.bacgroundColor {
+  background-color: #EBE3D5; }
+
+.titleCP {
+  font-family: rubik-ita;
+  color: #EB5E28; }
+
+.parraf {
+  font-family: rubik-black;
+  color: #403D39;
+  padding: 0.5rem; }
+
+/* Doy formato al logo de instagram, y el siguiente bloque se encarga de la animacion */
+.isoInsta {
+  height: 3rem;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  transition: box-shadow 0.5s ease;
+  border-radius: 1rem; }
+
+.isoInsta:hover {
+  box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.2); }
+
+/* Doy tamaño al logo de wp y lo hago mas grande al pasar el cursor */
+.isowp {
+  height: 10vw; }
+
+.isowp:hover {
+  height: 12vw; }
+
+/* Doy tamaño al iframe */
+.tamaño {
+  height: 60vh; }
+
+/* Doy mas aire entre las tarjetas de producto */
+.space {
+  padding: 1rem; }
+
+/* Desde aqui y los proximos tres bloques se encargan del footer, tanto del icono de correo, como la animacion y el formato del copy */
+.footCont {
+  grid-column: 1/5;
+  grid-row: 4/5; }
+
+.mail {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8%;
+  transition: box-shadow 0.5s ease;
+  border-radius: 0.8rem; }
+
+.mail:hover {
+  box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.2); }
+
+.copy {
+  font-family: rubik-black;
+  font-size: 1rem;
+  color: #403D39;
+  text-align: left;
+  margin-top: 10px; }
