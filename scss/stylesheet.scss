@@ -25,7 +25,8 @@
 
 /* cambio el color de fondo de toda la pagina */
 body {
-    background-color: $backgroundColor;
+    background-color: map-get($colors, backgroundColor);
+    height: 90vh;
 }
 
 /* Doy formato al logo de la empresa y a la vez hago la animacion para cuando el cursor le pasa por arriba */
@@ -33,16 +34,16 @@ body {
     text-decoration: none;
     font-family: Bonheur;
     font-size: 10vw;
-    color: $orange;
+    color: map-get($colors, orange);
 
-        {
-        text &:hover color: $dark;
+    &:hover {
+        color: map-get($colors, dark);
     }
 }
 
 /* Doy color al fondo de las tajetas de producto */
 .bacgroundColor {
-    background-color: $light;
+    background-color: map-get($colors, light);
 }
 
 /* Doy mas aire entre las tarjetas de producto */
@@ -53,13 +54,18 @@ body {
 /* Doy formato a los subtitulos del documento*/
 .titleCP {
     font-family: rubik-ita;
-    color: $orange;
+    color: map-get($colors, orange);
+}
+/* Hago un extend para dar formato de fuente, color y padding */
+format {
+    font-family: rubik-black;
+    color: map-get($colors, dark);
+    padding: 0.5rem;
 }
 
 /* Doy formato a todos los parrafos del documento */
 .parraf {
-    font-family: rubik-black;
-    color: $dark;
+    @extend format;
     padding: 0.5rem;
 }
 
@@ -71,18 +77,28 @@ body {
     right: 15px;
     transition: box-shadow 0.5s ease;
     border-radius: 1rem;
-    &:hover box-shadow: .5rem 0.5rem rgba(0, 0, 0, 0.2);
+
+    &:hover {
+        @include shadowBox;
+    }
 }
 
 /* Doy tamaño al logo de wp y lo hago mas grande al pasar el cursor */
 .isowp {
     height: 10vw;
-    &:hover height: 12vw;
+
+    &:hover {
+        height: 12vw;
+    }
 }
 
 /* Doy tamaño al iframe */
 .tamaño {
     height: 60vh;
+}
+
+.tamaño1 {
+    height: 50vh;
 }
 
 /* Desde aqui y los proximos tres bloques se encargan del footer, tanto del icono de correo, como la animacion y el formato del copy */
@@ -91,20 +107,9 @@ body {
     grid-row: 4/5;
 }
 
-.mail {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 8%;
-    transition: box-shadow 0.5s ease;
-    border-radius: 0.8rem;
-    &:hover box-shadow: .5rem 0.5rem rgba(0, 0, 0, 0.2);
-}
-
 .copy {
-    font-family: rubik-black;
-    font-size: 1rem;
-    color: $dark;
+    @extend format;
+    font-size: 1rem;    
     text-align: left;
     margin-top: 10px;
 }
