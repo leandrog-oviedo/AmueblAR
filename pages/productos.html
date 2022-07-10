@@ -19,15 +19,15 @@
 <body class="gridCont position-relative">
   <!--Aqui comienza el header de la pagina que incluye nombre de la empresa con el vinculos al index-->
   <header class="headCont container position-relative">
-    <div class="container text-center h1">
+    <div class="text-center spacing">
       <a class="isotype  col-xs-8 col-md-6" href="../index.html">AmueblAR </a>
     </div>
     <!-- Aqui comienza la barra de navegacion son cinco elementos con sus correspondientes links a cada seccion de la web -->
     <nav class="container navbar sticky-top navbar-expand-md navbar-light bg-ligth justify-content-end">
       <div class="text-start">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        <button class="navbar-toggler noline" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon navButtonSize"></span>
         </button>
         <div class="collapse navbar-collapse text-end " id="navbarNav">
           <ul class="navbar-nav">
@@ -55,8 +55,8 @@
   <!--Aqui comienza el listado con los diferentes productos, en tarjetas con un boton de mas informacion que dispara un modal donde se encuentra la foto nuevamente y la descripcción-->
   <main class="container">
     <section class="row g-6">
-      <article class="col-md-6 col-lg-4 col-xxl-3 space">
-        <div class="card text-center bacgroundColor text-dark h-100  border border-2 rounded-2 border-warning">
+      <article class="col-md-6 col-lg-4 col-xxl-3 cardSpace">
+        <div class="card text-center text-dark h-100 cardStyle">
           <h5 class="card-header titleCP">Credenza</h5>
           <img src="../assets/credenza.png" class="card-img-top img-fluid" alt="Imagen credenza">
           <div class="card-body">
@@ -66,8 +66,8 @@
           </div>
         </div>
       </article>
-      <article class="col-md-6 col-lg-4 col-xxl-3 space">
-        <div class="card text-center bacgroundColor text-dark h-100 border border-2 rounded-3 border-warning">
+      <article class="col-md-6 col-lg-4 col-xxl-3 cardSpace">
+        <div class="card text-center bacgroundColor text-dark h-100 cardStyle">
           <h5 class="card-header titleCP">Mesa ratona</h5>
           <img src="../assets/coffe-table.png" class="card-img-top img-fluid" alt="Imagen mesa ratona">
           <div class="card-body">
@@ -77,8 +77,8 @@
           </div>
         </div>
       </article>
-      <article class="col-md-6 col-lg-4 col-xxl-3 space">
-        <div class="card text-center bacgroundColor text-dark h-100 border border-2 rounded-3 border-warning">
+      <article class="col-md-6 col-lg-4 col-xxl-3 cardSpace">
+        <div class="card text-center bacgroundColor text-dark h-100 cardStyle">
           <h5 class="card-header titleCP">Escritorio</h5>
           <img src="../assets/desk.png" class="card-img-top img-fluid" alt="Imagen escritorio">
           <div class="card-body">
@@ -88,8 +88,8 @@
           </div>
         </div>
       </article>
-      <article class="col-md-6 col-lg-4 col-xxl-3 space">
-        <div class="card text-center bacgroundColor text-dark h-100 border border-2 rounded-3 border-warning">
+      <article class="col-md-6 col-lg-4 col-xxl-3 cardSpace">
+        <div class="card text-center bacgroundColor text-dark h-100 cardStyle">
           <h5 class="card-header titleCP">Mesa de luz</h5>
           <img src="../assets/nigth-stand.png" class="card-img-top img-fluid" alt="Imagen mesa de luz">
           <div class="card-body">
@@ -99,8 +99,8 @@
           </div>
         </div>
       </article>
-      <article class="col-md-6 col-lg-4 col-xxl-3 space">
-        <div class="card text-center bacgroundColor text-dark h-100 border border-2 rounded-3 border-warning">
+      <article class="col-md-6 col-lg-4 col-xxl-3 cardSpace">
+        <div class="card text-center bacgroundColor text-dark h-100 cardStyle">
           <h5 class="card-header titleCP">Rack para tv</h5>
           <img src="../assets/tv-rack.png" class="card-img-top img-fluid" alt="Imagen rack de tv">
           <div class="card-body">
@@ -115,12 +115,12 @@
     <section>
       <article id="modalCredenza" class="modal text-center" tabindex="-1">
         <div class="modal-dialog">
-          <div class="modal-content">
+          <div class="modal-content modalStyle">
             <div class="modal-header d-block text-center">
               <h5 class="modal-title titleCP">Credenza</h5>
             </div>
             <div class="modal-body">
-              <img src="../assets/credenza.png" class="card-img-top" alt="Imagen credenza">
+              <img src="../assets/credenza.png" class="card-img-top imgSize" alt="Imagen credenza">
               <p class="parraf">En este caso le dimos un giro moderno distinto de las credenzas tradicionales, es una pieza con un diseño único que podes usar en el tanto en el ingreso de tu hogar y complementaro con elementos decorativos.</p>
               <p class="parraf">Pero también se integra  perfectamente en un dormitorio u oficina es un mueble muy versátil.</p>
             </div>
@@ -132,12 +132,12 @@
       </article>
       <article id="modalCofeeTable" class="modal" tabindex="-1">
         <div class="modal-dialog">
-          <div class="modal-content">
+          <div class="modal-content modalStyle">
             <div class="modal-header d-block text-center">
               <h5 class="modal-title titleCP">Mesa Ratona</h5>
             </div>
             <div class="modal-body">
-              <img src="../assets/coffe-table.png" class="card-img-top" alt="Imagen credenza">
+              <img src="../assets/coffe-table.png" class="card-img-top imgSize" alt="Imagen credenza">
               <p class="parraf">Nuestra propia versión de una mesa ratona con un diseño vanguardista, en distintos niveles, podes personalizar los materiales de construcción.</p>
             </div>
             <div class="modal-footer">
@@ -148,12 +148,12 @@
       </article>
       <article id="modalDesk" class="modal" tabindex="-1">
         <div class="modal-dialog">
-          <div class="modal-content">
+          <div class="modal-content modalStyle">
             <div class="modal-header d-block text-center">
               <h5 class="modal-title titleCP">Escritorio</h5>
             </div>
             <div class="modal-body">
-              <img src="../assets/desk.png" class="card-img-top" alt="Imagen credenza">
+              <img src="../assets/desk.png" class="card-img-top imgSize" alt="Imagen credenza">
               <p class="parraf">Escritorio en “L” de estilo industrial con cajonera doble, realizado en caño estructural y madera, vos podes configurar las dimensiones, y la madera de tu preferencia.
               </p>
             </div>
@@ -165,12 +165,12 @@
       </article>
       <article id="modalNigthStand" class="modal" tabindex="-1">
         <div class="modal-dialog">
-          <div class="modal-content">
+          <div class="modal-content modalStyle">
             <div class="modal-header d-block text-center">
               <h5 class="modal-title titleCP">Mesa de luz</h5>
             </div>
             <div class="modal-body">
-              <img src="../assets/nigth-stand.png" class="card-img-top" alt="Imagen credenza">
+              <img src="../assets/nigth-stand.png" class="card-img-top imgSize" alt="Imagen credenza">
               <p class="parraf">Mesa de luz de estilo industrial, si bien en la foto vemos la opción de un cajon tambien las tenemos con dos cajones, podés personalizar los colores de la estructura de caño</p>
             </div>
             <div class="modal-footer">
@@ -181,12 +181,12 @@
       </article>
       <article id="modalTvRack" class="modal" tabindex="-1">
         <div class="modal-dialog">
-          <div class="modal-content">
+          <div class="modal-content modalStyle">
             <div class="modal-header d-block text-center">
               <h5 class="modal-title titleCP">Rack para Tv</h5>
             </div>
             <div class="modal-body">
-              <img src="../assets/tv-rack.png" class="card-img-top" alt="Imagen credenza">
+              <img src="../assets/tv-rack.png" class="card-img-top imgSize" alt="Imagen credenza">
               <p class="parraf">Esta imagen es meramente ilustrativa ya que no tenemos un diseño estándar, aca deja volar tu imaginación y pedile a nuestros asesores la pieza que necesites, si vos la podés soñar nosotros la podemos construir sin duda alguna.</p>
             </div>
             <div class="modal-footer">

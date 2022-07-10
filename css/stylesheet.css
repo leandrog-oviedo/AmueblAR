@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Hago un mixin con el sombreado (como el que se hizo en clase) y le agrego tambien una animación. */
 /* Declaro los font face para las fuentes que voy a usar en el proyecto */
 @font-face {
   font-family: Bonheur;
@@ -18,27 +19,68 @@
   padding: 0;
   box-sizing: border-box; }
 
-/* cambio el color de fondo de toda la pagina */
+/* Fondo generado desde https://galactic.ink/ */
 body {
-  background-color: #ccc5b9;
-  height: 90vh; }
+  background: #eecc91;
+  background-image: url("../assets/ZenBG-1.png"), url("../assets/ZenBG-2.png");
+  background-repeat: repeat-x, repeat; }
+
+.mainHeight {
+  height: 65vh; }
+
+.caro {
+  opacity: 90%;
+  border-radius: 8vw; }
 
 /* Doy formato al logo de la empresa y a la vez hago la animacion para cuando el cursor le pasa por arriba */
 .isotype {
   text-decoration: none;
+  display: inline-block;
   font-family: Bonheur;
-  font-size: 10vw;
+  font-weight: 500;
+  font-size: 12vw;
   color: #EB5E28; }
   .isotype:hover {
     color: #403D39; }
+
+.spacing {
+  padding-top: 5vw; }
+
+.navButtonSize {
+  width: 4vw; }
+
+.noline {
+  border: 0;
+  border-radius: 15px; }
 
 /* Doy color al fondo de las tajetas de producto */
 .bacgroundColor {
   background-color: #EBE3D5; }
 
 /* Doy mas aire entre las tarjetas de producto */
-.space {
+.cardSpace {
   padding: 1rem; }
+
+/* Doy estilo al borde de la tarjetas de producto y animación */
+.cardStyle {
+  border: 2px solid #EB5E28;
+  border-radius: 1rem;
+  background-color: rgba(171, 159, 139, 0.7); }
+  .cardStyle:hover {
+    box-shadow: 0.4rem 0.4rem rgba(0, 0, 0, 0.6);
+    transition: box-shadow 1s ease-in; }
+
+/* Doy estilo al fondo de todos los modales */
+.modalStyle {
+  border: 4px solid #EB5E28;
+  border-radius: 1rem;
+  background: #eecc91;
+  background-image: url("../assets/ZenBG-1.png"), url("../assets/ZenBG-2.png");
+  background-repeat: repeat-x, repeat; }
+
+/* Cambio el tamaño de la imagen que muestran los modales */
+.imgSize {
+  width: 40vw; }
 
 /* Doy formato a los subtitulos del documento*/
 .titleCP {
@@ -55,36 +97,52 @@ format, .parraf, .copy {
 .parraf {
   padding: 0.5rem; }
 
+.link {
+  text-decoration: none;
+  color: #EB5E28;
+  font-style: italic;
+  font-weight: 600; }
+  .link:visited {
+    color: #884125; }
+  .link:hover {
+    color: #403D39; }
+
 /* Doy formato al logo de instagram, y el siguiente bloque se encarga de la animacion */
 .isoInsta {
-  height: 3rem;
+  height: 2rem;
   position: fixed;
-  bottom: 15px;
+  bottom: 20px;
   right: 15px;
   transition: box-shadow 0.5s ease;
   border-radius: 1rem; }
   .isoInsta:hover {
-    box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0.4rem 0.4rem rgba(0, 0, 0, 0.6);
+    transition: box-shadow 1s ease-in; }
 
 /* Doy tamaño al logo de wp y lo hago mas grande al pasar el cursor */
-.isowp {
-  height: 10vw; }
-  .isowp:hover {
-    height: 12vw; }
+.wpIso {
+  display: inline-block;
+  height: 2rem;
+  padding-left: 1rem; }
+  .wpIso:hover {
+    height: 3rem; }
+
+.wpText {
+  display: inline-block;
+  padding-left: 1rem; }
 
 /* Doy tamaño al iframe */
-.tamaño {
-  height: 60vh; }
-
-.tamaño1 {
-  height: 50vh; }
+.sizeIFrame {
+  height: 55vh; }
 
 /* Desde aqui y los proximos tres bloques se encargan del footer, tanto del icono de correo, como la animacion y el formato del copy */
 .footCont {
-  grid-column: 1/5;
-  grid-row: 4/5; }
+  height: 9vh;
+  /* background-color: map-get($colors, dark);
+    background: rgb(232, 70, 6);
+    background: linear-gradient(90deg, rgba(232, 70, 6, 1) 0%, rgba(204, 197, 185, 1) 83%) */ }
 
 .copy {
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-align: left;
-  margin-top: 10px; }
+  color: #403D39; }
