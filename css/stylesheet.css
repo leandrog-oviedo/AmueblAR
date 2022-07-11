@@ -161,6 +161,12 @@ format, .parraf, .copy {
   transition: box-shadow 0.5s ease;
   border-radius: 1rem;
   z-index: 1; }
+  @media (min-width: 992px) {
+    .isoInsta {
+      height: 3rem; } }
+  @media (min-width: 1201) {
+    .isoInsta {
+      height: 4rem; } }
   .isoInsta:hover {
     box-shadow: 0.4rem 0.4rem rgba(0, 0, 0, 0.6);
     transition: box-shadow 1s ease-in; }

@@ -200,6 +200,12 @@ format {
     transition: box-shadow 0.5s ease;
     border-radius: 1rem;
     z-index: 1;
+    @include desktop{
+        height: 3rem;
+    }
+    @include widescreen{
+        height: 4rem;
+    }
 
     &:hover {
         @include shadowBox;
