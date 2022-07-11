@@ -4,8 +4,24 @@ $colors: (backgroundColor: #ccc5b9,
     dark:#403D39,
     light:#EBE3D5);
 
+/* Breakpoints */
+$desktop:992px;
+$widescreen: 1201;
+
 /* Hago un mixin con el sombreado (como el que se hizo en clase) y le agrego tambien una animación. */
 @mixin shadowBox {
     box-shadow: .4rem .4rem rgba(0, 0, 0, 0.6);
     transition: box-shadow 1s ease-in;
+}
+/* Hago mixins como los que vimos en clase para los tmaños de dessktop y widescreen. */
+@mixin desktop{
+    @media(min-width:#{$desktop}){
+        @content;
+    }
+}
+
+@mixin widescreen{
+    @media(min-width:#{$widescreen}){
+        @content;
+    }
 }

@@ -1,5 +1,7 @@
 @charset "UTF-8";
+/* Breakpoints */
 /* Hago un mixin con el sombreado (como el que se hizo en clase) y le agrego tambien una animación. */
+/* Hago mixins como los que vimos en clase para los tmaños de dessktop y widescreen. */
 /* Declaro los font face para las fuentes que voy a usar en el proyecto */
 @font-face {
   font-family: Bonheur;
@@ -27,10 +29,24 @@ body {
 
 .mainHeight {
   height: 65vh; }
+  @media (min-width: 992px) {
+    .mainHeight {
+      height: 90vh; } }
 
 .caro {
   opacity: 90%;
   border-radius: 8vw; }
+  @media (min-width: 992px) {
+    .caro {
+      border-radius: 4vw;
+      opacity: 100%; } }
+
+@media (min-width: 992px) {
+  .imgCarouselSize {
+    height: 60vw;
+    width: 60vw;
+    margin-left: 10vw;
+    margin-right: 10vw; } }
 
 /* Doy formato al logo de la empresa y a la vez hago la animacion para cuando el cursor le pasa por arriba */
 .isotype {
@@ -38,20 +54,39 @@ body {
   display: inline-block;
   font-family: Bonheur;
   font-weight: 500;
-  font-size: 12vw;
+  font-size: 14vw;
   color: #EB5E28; }
+  @media (min-width: 992px) {
+    .isotype {
+      font-size: 6vw;
+      margin-bottom: 0;
+      padding-bottom: 0; } }
   .isotype:hover {
     color: #403D39; }
 
 .spacing {
   padding-top: 5vw; }
+  @media (min-width: 992px) {
+    .spacing {
+      padding-top: 1rem; } }
 
+/* Dando formato a la barra de navegación */
 .navButtonSize {
   width: 4vw; }
+
+@media (min-width: 992px) {
+  .centerParraf {
+    margin-left: auto;
+    margin-right: auto; } }
 
 .noline {
   border: 0;
   border-radius: 15px; }
+
+@media (min-width: 992px) {
+  .navSpace {
+    margin-top: 0;
+    padding-top: 0; } }
 
 /* Doy color al fondo de las tajetas de producto */
 .bacgroundColor {
@@ -60,6 +95,10 @@ body {
 /* Doy mas aire entre las tarjetas de producto */
 .cardSpace {
   padding: 1rem; }
+  @media (min-width: 992px) {
+    .cardSpace {
+      margin-right: auto;
+      margin-left: auto; } }
 
 /* Doy estilo al borde de la tarjetas de producto y animación */
 .cardStyle {
@@ -81,6 +120,12 @@ body {
 /* Cambio el tamaño de la imagen que muestran los modales */
 .imgSize {
   width: 40vw; }
+  @media (min-width: 992px) {
+    .imgSize {
+      width: 25vw; } }
+  @media (min-width: 1201) {
+    .imgSize {
+      width: 20vw; } }
 
 /* Doy formato a los subtitulos del documento*/
 .titleCP {
@@ -114,7 +159,8 @@ format, .parraf, .copy {
   bottom: 20px;
   right: 15px;
   transition: box-shadow 0.5s ease;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  z-index: 1; }
   .isoInsta:hover {
     box-shadow: 0.4rem 0.4rem rgba(0, 0, 0, 0.6);
     transition: box-shadow 1s ease-in; }
@@ -137,12 +183,12 @@ format, .parraf, .copy {
 
 /* Desde aqui y los proximos tres bloques se encargan del footer, tanto del icono de correo, como la animacion y el formato del copy */
 .footCont {
-  height: 9vh;
-  /* background-color: map-get($colors, dark);
-    background: rgb(232, 70, 6);
-    background: linear-gradient(90deg, rgba(232, 70, 6, 1) 0%, rgba(204, 197, 185, 1) 83%) */ }
+  height: 9vh; }
 
 .copy {
   font-size: 0.8rem;
   text-align: left;
   color: #403D39; }
+  @media (min-width: 992px) {
+    .copy {
+      margin-top: 1rem; } }

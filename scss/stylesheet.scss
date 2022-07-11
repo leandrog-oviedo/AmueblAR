@@ -33,11 +33,29 @@ body {
 
 .mainHeight {
     height: 65vh;
+    @include desktop{
+        height: 90vh;
+    }
 }
 
 .caro {
     opacity: 90%;
     border-radius: 8vw;
+
+    @include desktop {
+        border-radius: 4vw;
+        opacity: 100%;
+        
+        }
+}
+.imgCarouselSize{
+    @include desktop{
+        height: 60vw;
+        width: 60vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        
+    }
 }
 
 /* Doy formato al logo de la empresa y a la vez hago la animacion para cuando el cursor le pasa por arriba */
@@ -51,6 +69,12 @@ body {
         size: 14vw;
     }
 
+    @include desktop {
+        font-size: 6vw;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
     color: map-get($colors, orange);
 
     &:hover {
@@ -60,15 +84,31 @@ body {
 
 .spacing {
     padding-top: 5vw;
-}
 
+    @include desktop {
+        padding-top: 1rem;
+    }
+}
+/* Dando formato a la barra de navegación */
 .navButtonSize {
     width: 4vw;
+}
+.centerParraf{
+    @include desktop{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .noline {
     border: 0;
     border-radius: 15px;
+}
+.navSpace{
+    @include desktop{
+        margin-top: 0;
+        padding-top: 0;
+    }
 }
 
 /* Doy color al fondo de las tajetas de producto */
@@ -79,6 +119,10 @@ body {
 /* Doy mas aire entre las tarjetas de producto */
 .cardSpace {
     padding: 1rem;
+    @include desktop{
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 /* Doy estilo al borde de la tarjetas de producto y animación */
@@ -91,17 +135,25 @@ body {
         @include shadowBox;
     }
 }
+
 /* Doy estilo al fondo de todos los modales */
-.modalStyle{
+.modalStyle {
     border: 4px solid map-get($colors, orange);
     border-radius: 1rem;
     background: #eecc91;
     background-image: url("../assets/ZenBG-1.png"), url("../assets/ZenBG-2.png");
     background-repeat: repeat-x, repeat;
 }
+
 /* Cambio el tamaño de la imagen que muestran los modales */
-.imgSize{
+.imgSize {
     width: 40vw;
+    @include desktop{
+        width: 25vw;
+    }
+    @include widescreen{
+        width: 20vw;
+    }
 }
 
 /* Doy formato a los subtitulos del documento*/
@@ -147,6 +199,7 @@ format {
     right: 15px;
     transition: box-shadow 0.5s ease;
     border-radius: 1rem;
+    z-index: 1;
 
     &:hover {
         @include shadowBox;
@@ -163,7 +216,8 @@ format {
         height: 3rem;
     }
 }
-.wpText{
+
+.wpText {
     display: inline-block;
     padding-left: 1rem;
 }
@@ -178,10 +232,6 @@ format {
 /* Desde aqui y los proximos tres bloques se encargan del footer, tanto del icono de correo, como la animacion y el formato del copy */
 .footCont {
     height: 9vh;
-    /* background-color: map-get($colors, dark);
-    background: rgb(232, 70, 6);
-    background: linear-gradient(90deg, rgba(232, 70, 6, 1) 0%, rgba(204, 197, 185, 1) 83%) */
-    ;
 }
 
 .copy {
@@ -189,5 +239,8 @@ format {
     font-size: 0.8rem;
     text-align: left;
     color: map-get($colors, dark);
+    @include desktop{
+        margin-top: 1rem;
+    }
 
 }
